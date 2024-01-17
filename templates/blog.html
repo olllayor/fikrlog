@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+{% for message in get_flashed_messages() %}
+    {{ message }}
+{% endfor %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olloyor's Blog</title>
+</head>
+
+<body>
+    <!-- {% block content %}
+    {% endblock %} -->
+    {% include 'navbar.html' %}
+    <br/>
+    <div class="container">
+    <h3>Maqolalar</h3>
+        {% for slug, article in articles.items() %}
+        <a href="/blog/{{slug}}">{{ article.title }}</a><br />
+        {% endfor %}
+    </div>
+
+    </body>
+
+</html>
+

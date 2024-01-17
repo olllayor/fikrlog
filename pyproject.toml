@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "blog-flask"
+version = "0.1.0"
+description = ""
+authors = ["milliyinfo <muhammadnabiyevolloyor@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^3.0.0"
+python-slugify = "^8.0.1"
+flask-ckeditor = "^0.5.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
